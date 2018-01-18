@@ -17,6 +17,14 @@ namespace MyGeoFenceiOS
         [GeneratedCode ("iOS Designer", "1.0")]
         MapKit.MKMapView map { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtLoc { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtLong { get; set; }
+
         [Action ("UIButton412_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void UIButton412_TouchUpInside (UIKit.UIButton sender);
@@ -26,6 +34,16 @@ namespace MyGeoFenceiOS
             if (map != null) {
                 map.Dispose ();
                 map = null;
+            }
+
+            if (txtLoc != null) {
+                txtLoc.Dispose ();
+                txtLoc = null;
+            }
+
+            if (txtLong != null) {
+                txtLong.Dispose ();
+                txtLong = null;
             }
         }
     }
