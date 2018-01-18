@@ -6,6 +6,11 @@ namespace MyGeoFenceiOS
 {
     public partial class ViewController : UIViewController
     {
+        partial void UIButton412_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
+
         protected ViewController(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
@@ -14,6 +19,8 @@ namespace MyGeoFenceiOS
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            map.MapType = MapKit.MKMapType.Hybrid;
+
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
